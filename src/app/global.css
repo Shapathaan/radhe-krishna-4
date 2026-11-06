@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest-dark: #0b1a14;
+  --forest-base: #0d231b;
+  --ivory-warm: #fbfaf7;
+  --obsidian: #0a0a0c;
+  --champagne: #dfcbb5;
+  --champagne-gold: #d4af37;
+}
+
+body {
+  background-color: var(--obsidian);
+  color: var(--ivory-warm);
+  overflow-x: hidden;
+  font-feature-settings: "ss01", "ss02", "cv01", "kern";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Luxury Editorial Glassmorphism Panel */
+.editorial-drawer {
+  background: rgba(11, 26, 20, 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-left: 1px solid rgba(223, 203, 181, 0.15);
+}
+
+.text-stroke-champagne {
+  -webkit-text-stroke: 1px var(--champagne);
+  color: transparent;
+}
+
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
